@@ -17,6 +17,9 @@ gem 'simple_form', '~> 3.2', '>= 3.2.1'
 
 
 
+
+
+
 group :development, :test do
     gem 'byebug'
 end
@@ -29,6 +32,6 @@ end
 
 group :production do
     gem 'rails_12factor', '~> 0.0.3'
-    gem 'pg', '~> 0.18.4' 
+    gem 'pg', '~> 0.18.4'
 end
 
