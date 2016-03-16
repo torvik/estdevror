@@ -12,7 +12,7 @@ class ContactsController < ApplicationController
         name = params[:contact][:name]
         email = params[:contact][:email]
         message = params[:contact][:message]
-        ContactMailer.contact_email(name, email, message)
+        ContactMailer.contact_email(name, email, message).deliver
         flash[:success] = "Thanks for the message, we will be in touch soon."
       else
         redirect_to pages_contact_path
