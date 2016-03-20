@@ -1,4 +1,4 @@
 git add -A
-git commit -m "push to test mailer form"
+git commit -m "footer"
 git push origin master
 git push heroku master
