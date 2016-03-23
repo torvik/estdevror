@@ -1,4 +1,4 @@
 git add -A
-git commit -m "footer"
+git commit -m "added comments and some styles"
 git push origin master
 git push heroku master
