@@ -1,4 +1,4 @@
 git add -A
-git commit -m "finished comments and some restyle"
-git push origin master
-git push heroku master
+git commit -m "updated styles and completed comments"
+git push origin comments
+   
