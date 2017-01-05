@@ -20,6 +20,7 @@ gem 'will_paginate-bootstrap', '~> 1.0', '>= 1.0.1'
 
 group :development, :test do
     gem 'byebug'
+    gem 'figaro', '~> 1.1', '>= 1.1.1'
 end
 
 group :development do
