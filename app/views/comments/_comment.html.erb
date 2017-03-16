@@ -1,19 +1,19 @@
 <div class="media">
     <div class="pull-left">
-        
-        <%= comment.user.username %>
-       
+
+        <strong><%= comment.user.username %><br></strong>
+        <%= image_tag comment.user.image.url(:thumb), class: "img-circle" %>
+
     </div>
     <div class="media-body">
         <p class="media-heading pull-right">
           <%= time_ago_in_words(comment.created_at) %>
         </p><br />
         <%= comment.body %>
-       
+
     </div>
 </div>
 
+<%= link_to "Edit", edit_article_comment_path(comment.article, comment), class: "btn btn-success btn-xs round" %>
 
-	<%= link_to "Edit", edit_article_comment_path(comment.article, comment) %>
-
-<%= link_to "Delete", [comment.article, comment], method: :delete, data: { confirm: "Are you sure?" } %>
+<%= link_to "Delete", [comment.article, comment], method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-danger btn-xs round" %>
