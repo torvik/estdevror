@@ -12,7 +12,7 @@
 
         <!-- Author -->
         <p class="lead">
-          <%= @article.user.username %>
+          Article by: <%= @article.user.username %>
         </p>
         <%= image_tag @article.user.image.url(:thumb), class: "img-circle" %>
 
@@ -74,12 +74,11 @@
 
 </div>
 
-
-<%= link_to 'Edit', edit_article_path(@article),
-class: "btn btn-info btn-xs round" %> |
 <%= link_to 'Back', articles_path,
 class: "btn btn-success btn-xs round" %> |
-<%= link_to 'Destroy', @article, method: :delete, data: { confirm: "Are you sure?"},
+<%= link_to 'Edit Article', edit_article_path(@article),
+class: "btn btn-info btn-xs round" %> |
+<%= link_to 'Delete Article', @article, method: :delete, data: { confirm: "Are you sure?"},
 class: "btn btn-danger btn-xs round" %>
 
 
