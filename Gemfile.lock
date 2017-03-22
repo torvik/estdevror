@@ -54,6 +54,7 @@ GEM
       rails (>= 3.1.0)
     builder (3.2.2)
     byebug (8.2.2)
+    cancancan (1.16.0)
     climate_control (0.1.0)
     cocaine (0.5.8)
       climate_control (>= 0.0.3, < 1.0)
@@ -197,6 +198,7 @@ DEPENDENCIES
   bootstrap-sass (~> 3.3, >= 3.3.6)
   bootstrap-sass-extras (~> 0.0.2)
   byebug
+  cancancan (~> 1.16)
   coffee-rails (~> 4.1.0)
   devise (~> 3.5, >= 3.5.6)
   figaro (~> 1.1, >= 1.1.1)
@@ -217,3 +219,6 @@ DEPENDENCIES
   web-console (~> 2.0)
   will_paginate (~> 3.1)
   will_paginate-bootstrap (~> 1.0, >= 1.0.1)
+
+BUNDLED WITH
+   1.13.7
